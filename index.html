@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="UTOPIA - THE DREAM WORLD. Marque de streetwear moderne inspirée de l'énergie urbaine et du luxe brut. Découvrez nos collections uniques et exclusives.">
+<meta name="keywords" content="streetwear, fashion, UTOPIA, mode urbaine, vêtements premium, collections">
+<meta name="author" content="UTOPIA Brand">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UTOPIA - THE DREAM WORLD">
+<meta property="og:description" content="Marque de streetwear moderne. Exprime ton style avec élégance.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1974&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="UTOPIA - THE DREAM WORLD">
+<meta name="twitter:description" content="Marque de streetwear moderne inspirée de l'énergie urbaine.">
+<title>UTOPIA - THE DREAM WORLD | Streetwear Officiel</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(241, 51, 51, 0.753);
+backdrop-filter:blur(10px);
+z-index:1000;
+border-bottom:1px solid #222;
+}
+
+.logo{
+font-family:'poppins',popular,sans-serif;
+font-size:2rem;
+letter-spacing:6px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-size:14px;
+text-transform:uppercase;
+transition:0.3s;
+}
+
+nav a:hover{
+color:gray;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 10%;
+background:url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1974&auto=format&fit=crop') center/cover;
+position:relative;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-family:'poppins',popular,sans-serif;
+font-size:7rem;
+letter-spacing:10px;
+}
+
+.hero p{
+margin-top:20px;
+font-size:1.2rem;
+color:#ccc;
+max-width:700px;
+margin-inline:auto;
+}
+
+.buttons{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 35px;
+border:1px solid white;
+text-decoration:none;
+color:white;
+text-transform:uppercase;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+color:black;
+}
+
+section{
+padding:120px 8%;
+}
+
+.section-title{
+font-family:'Anton',sans-serif;
+font-size:3rem;
+margin-bottom:60px;
+letter-spacing:4px;
+text-align:center;
+}
+
+.about{
+text-align:center;
+max-width:1000px;
+margin:auto;
+}
+
+.about p{
+line-height:2;
+color:#ccc;
+font-size:1.1rem;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111;
+border:1px solid #222;
+border-radius:20px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.card h3{
+font-size:1.5rem;
+margin-bottom:10px;
+}
+
+.card p{
+color:#aaa;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+.price{
+font-size:1.2rem;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+form{
+max-width:800px;
+margin:auto;
+background:#111;
+padding:40px;
+border-radius:20px;
+border:1px solid #222;
+}
+
+.input-group{
+margin-bottom:20px;
+}
+
+input,
+textarea,
+select{
+width:100%;
+padding:15px;
+background:black;
+border:1px solid #333;
+color:white;
+border-radius:10px;
+font-size:1rem;
+}
+
+textarea{
+height:150px;
+resize:none;
+}
+
+button{
+width:100%;
+padding:18px;
+background:white;
+color:black;
+border:none;
+font-weight:bold;
+font-size:1rem;
+cursor:pointer;
+transition:0.3s;
+border-radius:10px;
+}
+
+button:hover{
+transform:scale(1.02);
+}
+
+footer{
+padding:40px 8%;
+text-align:center;
+border-top:1px solid #222;
+color:#777;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:4rem;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+UTOPIA
+</div>
+
+<nav>
+<a href="#home">Accueil</a>
+<a href="#collections">Collections</a>
+<a href="#products">Produits</a>
+<a href="#about">À propos</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>UTOPIA</h1>
+
+<p>
+Exprime ton style avec élégance. UTOPIA propose des vêtements modernes inspirés du streetwear, du luxe brut et de l’énergie urbaine.
+</p>
+
+<div class="buttons">
+
+<a href="#collections" class="btn">
+Découvrir la collection
+</a>
+
+<a href="#contact" class="btn">
+Nous contacter
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">
+À PROPOS
+</h2>
+
+<div class="about">
+
+<p>
+UTOPIA valorise une vision moderne du streetwear à travers des créations puissantes, minimalistes et élégantes. Chaque pièce mélange ambition, rêve et identité urbaine pour créer une marque forte et intemporelle.
+</p>
+
+</div>
+
+</section>
+
+<section id="collections">
+
+<h2 class="section-title">
+COLLECTIONS
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1974&auto=format&fit=crop">
+<div class="card-content">
+<h3>Collection Homme</h3>
+<p>Ensembles streetwear modernes inspirés des tendances urbaines.</p>
+<a href="#" class="btn">Voir la collection</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1973&auto=format&fit=crop">
+<div class="card-content">
+<h3>Collection Femme</h3>
+<p>Pièces élégantes et modernes avec une identité forte.</p>
+<a href="#" class="btn">Voir la collection</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1974&auto=format&fit=crop">
+<div class="card-content">
+<h3>Accessoires</h3>
+<p>Accessoires premium pour compléter le style UTOPIA.</p>
+<a href="#" class="btn">Voir la collection</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="products">
+
+<h2 class="section-title">
+PRODUITS POPULAIRES
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1887&auto=format&fit=crop">
+<div class="card-content">
+<h3>Money Talk Tee</h3>
+<div class="price">6000 FCFA</div>
+<p>T-shirt streetwear premium inspiré des billets sénégalais.</p>
+<a href="#" class="btn">Commander</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?q=80&w=1974&auto=format&fit=crop">
+<div class="card-content">
+<h3>Dream World Hoodie</h3>
+<div class="price">12000 FCFA</div>
+<p>Hoodie oversize avec design minimal et ambiance luxe brut.</p>
+<a href="#" class="btn">Commander</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1974&auto=format&fit=crop">
+<div class="card-content">
+<h3>Utopia Cargo</h3>
+<div class="price">15000 FCFA</div>
+<p>Pantalon cargo moderne inspiré du streetwear international.</p>
+<a href="#" class="btn">Commander</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">
+CONTACT / COMMANDE
+</h2>
+
+<form>
+
+<div class="input-group">
+<input type="text" placeholder="Nom complet" required>
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="Adresse e-mail" required>
+</div>
+
+<div class="input-group">
+<input type="text" placeholder="Numéro de téléphone" required>
+</div>
+
+<div class="input-group">
+<input type="text" placeholder="Produit souhaité" required>
+</div>
+
+<div class="input-group">
+<select>
+<option>Taille</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+</div>
+
+<div class="input-group">
+<input type="text" placeholder="Couleur préférée">
+</div>
+
+<div class="input-group">
+<textarea placeholder="Message"></textarea>
+</div>
+
+<button>
+Envoyer
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+UTOPIA — THE DREAM WORLD
+</p>
+
+</footer>
+
+</body>
+</html>
